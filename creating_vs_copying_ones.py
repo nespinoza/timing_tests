@@ -15,10 +15,12 @@ for i in range(nsim):
     # Define variables that will host the copies:
     v1,v2 = 0.,0.
     start = timer()
+    # Copy the ones array:
     v1 = np.copy(x)
     end = timer()
     vals1[i] = end-start
     start = timer()
+    # Create the ones array:
     v2 = np.ones(n)
     end = timer()
     vals2[i] = end-start
