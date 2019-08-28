@@ -5,7 +5,6 @@ nsim = 10000
 def get_mad_sigma(x):
     return np.median(np.abs(x-np.median(x)))*1.4826
     
-
 # Create large arrays of ones:
 n = 100000
 x = np.ones(n)
